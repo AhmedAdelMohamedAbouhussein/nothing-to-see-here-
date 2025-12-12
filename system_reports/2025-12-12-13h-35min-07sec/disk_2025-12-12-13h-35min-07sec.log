@@ -1,0 +1,57 @@
+NAME	SIZE	TYPE	MOUNTPOINT	
+sda	447.1G	disk	
+├─sda1	1G	part	/boot/EFI	480K used
+├─sda2	1G	part	/boot	106M used
+├─sda3	8G	part	[SWAP]
+└─sda4	437.1G	part	
+└─system_lvm	437.1G	crypt	
+├─system_volgroup0-lv_root	150G	lvm	/	18G used
+└─system_volgroup0-lv_home	287.1G	lvm	/home	11G used
+sdb	298.1G	disk	
+└─sdb1	298.1G	part	
+└─secdata_volgroup0-lv_secdata	298.1G	lvm	
+sdc	465.8G	disk	
+└─sdc1	465.8G	part	
+└─data_volgroup0-data_lvm	465.7G	crypt	
+└─data_volgroup0-lv_data	465.7G	lvm	/data	2.1M used
+sdd	29.8G	disk	
+└─sdd1	29.8G	part	
+===============================
+NAME	SIZE	TYPE	MOUNTPOINT	
+sda	447.1G	disk	
+├─sda1	1G	part	/boot/EFI	480K used
+├─sda2	1G	part	/boot	106M used
+├─sda3	8G	part	[SWAP]
+└─sda4	437.1G	part	
+└─system_lvm	437.1G	crypt	
+├─system_volgroup0-lv_root	150G	lvm	/	18G used
+└─system_volgroup0-lv_home	287.1G	lvm	/home	11G used
+sdb	298.1G	disk	
+└─sdb1	298.1G	part	
+└─secdata_volgroup0-lv_secdata	298.1G	lvm	
+sdc	465.8G	disk	
+└─sdc1	465.8G	part	
+└─data_volgroup0-data_lvm	465.7G	crypt	
+└─data_volgroup0-lv_data	465.7G	lvm	/data	2.1M used
+sdd	29.8G	disk	
+└─sdd1	29.8G	part	
+===============================
+NAME	SIZE	TYPE	MOUNTPOINT	
+sda	447.1G	disk	
+├─sda1	1G	part	/boot/EFI	480K used
+├─sda2	1G	part	/boot	106M used
+├─sda3	8G	part	[SWAP]
+└─sda4	437.1G	part	
+└─system_lvm	437.1G	crypt	
+├─system_volgroup0-lv_root	150G	lvm	/	18G used
+└─system_volgroup0-lv_home	287.1G	lvm	/home	11G used
+sdb	298.1G	disk	
+└─sdb1	298.1G	part	
+└─secdata_volgroup0-lv_secdata	298.1G	lvm	
+sdc	465.8G	disk	
+└─sdc1	465.8G	part	
+└─data_volgroup0-data_lvm	465.7G	crypt	
+└─data_volgroup0-lv_data	465.7G	lvm	/data	2.1M used
+sdd	29.8G	disk	
+└─sdd1	29.8G	part	
+===============================
