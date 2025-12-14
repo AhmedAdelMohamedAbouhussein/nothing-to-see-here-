@@ -52,18 +52,18 @@ function Reports() {
     };
 
     const renderMetrics = () => {
-      if (!folderData) return null;
+        if (!folderData) return null;
 
-      const { cpu, gpu, memory, disk: disks } = folderData;
+        const { cpu, gpu, memory, disk: disks } = folderData;
 
-      return (
-        <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-          <CpuGpuChart cpuData={cpu} gpuData={gpu} />
-          {/* RAM + Virtual Memory Line Chart */}
-          <MemoryLineChart ram={memory.ram} virtual={memory.virtual} />
-          <DiskBarChart diskSnapshots={disks} />
-        </div>
-      );
+        return (
+            <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
+                <CpuGpuChart cpuData={cpu} gpuData={gpu} />
+                {/* RAM + Virtual Memory Line Chart */}
+                <MemoryLineChart ram={memory.ram} virtual={memory.virtual} />
+                <DiskBarChart diskSnapshots={disks} />
+            </div>
+        );
     };
 
     return (

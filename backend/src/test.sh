@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOG_DIR="../system_reports"
+LOG_DIR="system_reports"
 mkdir -p "$LOG_DIR"
 INTERVAL=10
 
@@ -156,8 +156,6 @@ function network
 
 function smartStatus 
 {
-   
-   
     sudo smartctl --scan | awk '{print $1}' | while read -r dev; do
     echo "===== SMART info for $dev ====="
     sudo smartctl -T permissive -a "$dev"

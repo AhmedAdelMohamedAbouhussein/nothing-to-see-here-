@@ -1,0 +1,35 @@
+.diskContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.disk {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    width: 220px;
+    background: #fff;
+    color: black;
+}
+
+.diskCircle {
+    width: 100px;
+    margin: 10px auto;
+}
+
+.partitions {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.partition h5 {
+    margin: 0 0 5px 0;
+    font-size: 12px;
+}
+.partition {
+    width: 80px;
+    margin: 0 auto;
+}

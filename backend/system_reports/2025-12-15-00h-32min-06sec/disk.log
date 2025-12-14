@@ -1,0 +1,945 @@
+2025-12-15-00h-32min-06sec: disk : sda 447.1G
+2025-12-15-00h-32min-06sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-32min-06sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-32min-06sec: partition : sda4 437.1G 
+2025-12-15-00h-32min-06sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-32min-06sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-32min-06sec: disk : sdb 298.1G
+2025-12-15-00h-32min-06sec: partition : sdb1 298.1G 
+2025-12-15-00h-32min-06sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-32min-06sec: disk : sdc 465.8G
+2025-12-15-00h-32min-06sec: partition : sdc1 465.8G 
+2025-12-15-00h-32min-06sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-32min-06sec: disk : sdd 29.8G
+2025-12-15-00h-32min-06sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-32min-10sec: disk : sda 447.1G
+2025-12-15-00h-32min-10sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-32min-10sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-32min-10sec: partition : sda4 437.1G 
+2025-12-15-00h-32min-10sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-32min-10sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-32min-10sec: disk : sdb 298.1G
+2025-12-15-00h-32min-10sec: partition : sdb1 298.1G 
+2025-12-15-00h-32min-10sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-32min-10sec: disk : sdc 465.8G
+2025-12-15-00h-32min-10sec: partition : sdc1 465.8G 
+2025-12-15-00h-32min-10sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-32min-10sec: disk : sdd 29.8G
+2025-12-15-00h-32min-10sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-32min-14sec: disk : sda 447.1G
+2025-12-15-00h-32min-14sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-32min-14sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-32min-14sec: partition : sda4 437.1G 
+2025-12-15-00h-32min-14sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-32min-14sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-32min-14sec: disk : sdb 298.1G
+2025-12-15-00h-32min-14sec: partition : sdb1 298.1G 
+2025-12-15-00h-32min-14sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-32min-14sec: disk : sdc 465.8G
+2025-12-15-00h-32min-14sec: partition : sdc1 465.8G 
+2025-12-15-00h-32min-14sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-32min-14sec: disk : sdd 29.8G
+2025-12-15-00h-32min-14sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-32min-19sec: disk : sda 447.1G
+2025-12-15-00h-32min-19sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-32min-19sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-32min-19sec: partition : sda4 437.1G 
+2025-12-15-00h-32min-19sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-32min-19sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-32min-19sec: disk : sdb 298.1G
+2025-12-15-00h-32min-19sec: partition : sdb1 298.1G 
+2025-12-15-00h-32min-19sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-32min-19sec: disk : sdc 465.8G
+2025-12-15-00h-32min-19sec: partition : sdc1 465.8G 
+2025-12-15-00h-32min-19sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-32min-19sec: disk : sdd 29.8G
+2025-12-15-00h-32min-19sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-32min-23sec: disk : sda 447.1G
+2025-12-15-00h-32min-23sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-32min-23sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-32min-23sec: partition : sda4 437.1G 
+2025-12-15-00h-32min-23sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-32min-23sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-32min-23sec: disk : sdb 298.1G
+2025-12-15-00h-32min-23sec: partition : sdb1 298.1G 
+2025-12-15-00h-32min-23sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-32min-23sec: disk : sdc 465.8G
+2025-12-15-00h-32min-23sec: partition : sdc1 465.8G 
+2025-12-15-00h-32min-23sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-32min-23sec: disk : sdd 29.8G
+2025-12-15-00h-32min-23sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-32min-27sec: disk : sda 447.1G
+2025-12-15-00h-32min-27sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-32min-27sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-32min-27sec: partition : sda4 437.1G 
+2025-12-15-00h-32min-27sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-32min-27sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-32min-27sec: disk : sdb 298.1G
+2025-12-15-00h-32min-27sec: partition : sdb1 298.1G 
+2025-12-15-00h-32min-27sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-32min-27sec: disk : sdc 465.8G
+2025-12-15-00h-32min-28sec: partition : sdc1 465.8G 
+2025-12-15-00h-32min-28sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-32min-28sec: disk : sdd 29.8G
+2025-12-15-00h-32min-28sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-32min-32sec: disk : sda 447.1G
+2025-12-15-00h-32min-32sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-32min-32sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-32min-32sec: partition : sda4 437.1G 
+2025-12-15-00h-32min-32sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-32min-32sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-32min-32sec: disk : sdb 298.1G
+2025-12-15-00h-32min-32sec: partition : sdb1 298.1G 
+2025-12-15-00h-32min-32sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-32min-32sec: disk : sdc 465.8G
+2025-12-15-00h-32min-32sec: partition : sdc1 465.8G 
+2025-12-15-00h-32min-32sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-32min-32sec: disk : sdd 29.8G
+2025-12-15-00h-32min-32sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-32min-36sec: disk : sda 447.1G
+2025-12-15-00h-32min-36sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-32min-36sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-32min-36sec: partition : sda4 437.1G 
+2025-12-15-00h-32min-36sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-32min-36sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-32min-36sec: disk : sdb 298.1G
+2025-12-15-00h-32min-36sec: partition : sdb1 298.1G 
+2025-12-15-00h-32min-36sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-32min-36sec: disk : sdc 465.8G
+2025-12-15-00h-32min-36sec: partition : sdc1 465.8G 
+2025-12-15-00h-32min-36sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-32min-36sec: disk : sdd 29.8G
+2025-12-15-00h-32min-36sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-32min-41sec: disk : sda 447.1G
+2025-12-15-00h-32min-41sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-32min-41sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-32min-41sec: partition : sda4 437.1G 
+2025-12-15-00h-32min-41sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-32min-41sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-32min-41sec: disk : sdb 298.1G
+2025-12-15-00h-32min-41sec: partition : sdb1 298.1G 
+2025-12-15-00h-32min-41sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-32min-41sec: disk : sdc 465.8G
+2025-12-15-00h-32min-41sec: partition : sdc1 465.8G 
+2025-12-15-00h-32min-41sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-32min-41sec: disk : sdd 29.8G
+2025-12-15-00h-32min-41sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-32min-45sec: disk : sda 447.1G
+2025-12-15-00h-32min-45sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-32min-45sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-32min-45sec: partition : sda4 437.1G 
+2025-12-15-00h-32min-45sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-32min-45sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-32min-45sec: disk : sdb 298.1G
+2025-12-15-00h-32min-45sec: partition : sdb1 298.1G 
+2025-12-15-00h-32min-45sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-32min-45sec: disk : sdc 465.8G
+2025-12-15-00h-32min-45sec: partition : sdc1 465.8G 
+2025-12-15-00h-32min-45sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-32min-45sec: disk : sdd 29.8G
+2025-12-15-00h-32min-45sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-32min-50sec: disk : sda 447.1G
+2025-12-15-00h-32min-50sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-32min-50sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-32min-50sec: partition : sda4 437.1G 
+2025-12-15-00h-32min-50sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-32min-50sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-32min-50sec: disk : sdb 298.1G
+2025-12-15-00h-32min-50sec: partition : sdb1 298.1G 
+2025-12-15-00h-32min-50sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-32min-50sec: disk : sdc 465.8G
+2025-12-15-00h-32min-50sec: partition : sdc1 465.8G 
+2025-12-15-00h-32min-50sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-32min-50sec: disk : sdd 29.8G
+2025-12-15-00h-32min-50sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-32min-54sec: disk : sda 447.1G
+2025-12-15-00h-32min-54sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-32min-54sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-32min-54sec: partition : sda4 437.1G 
+2025-12-15-00h-32min-54sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-32min-54sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-32min-54sec: disk : sdb 298.1G
+2025-12-15-00h-32min-54sec: partition : sdb1 298.1G 
+2025-12-15-00h-32min-54sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-32min-54sec: disk : sdc 465.8G
+2025-12-15-00h-32min-54sec: partition : sdc1 465.8G 
+2025-12-15-00h-32min-54sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-32min-54sec: disk : sdd 29.8G
+2025-12-15-00h-32min-54sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-32min-58sec: disk : sda 447.1G
+2025-12-15-00h-32min-58sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-32min-58sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-32min-58sec: partition : sda4 437.1G 
+2025-12-15-00h-32min-58sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-32min-58sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-32min-58sec: disk : sdb 298.1G
+2025-12-15-00h-32min-58sec: partition : sdb1 298.1G 
+2025-12-15-00h-32min-58sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-32min-58sec: disk : sdc 465.8G
+2025-12-15-00h-32min-58sec: partition : sdc1 465.8G 
+2025-12-15-00h-32min-58sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-32min-58sec: disk : sdd 29.8G
+2025-12-15-00h-32min-58sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-33min-03sec: disk : sda 447.1G
+2025-12-15-00h-33min-03sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-33min-03sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-33min-03sec: partition : sda4 437.1G 
+2025-12-15-00h-33min-03sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-33min-03sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-33min-03sec: disk : sdb 298.1G
+2025-12-15-00h-33min-03sec: partition : sdb1 298.1G 
+2025-12-15-00h-33min-03sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-33min-03sec: disk : sdc 465.8G
+2025-12-15-00h-33min-03sec: partition : sdc1 465.8G 
+2025-12-15-00h-33min-03sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-33min-03sec: disk : sdd 29.8G
+2025-12-15-00h-33min-03sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-33min-07sec: disk : sda 447.1G
+2025-12-15-00h-33min-07sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-33min-07sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-33min-07sec: partition : sda4 437.1G 
+2025-12-15-00h-33min-07sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-33min-07sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-33min-07sec: disk : sdb 298.1G
+2025-12-15-00h-33min-07sec: partition : sdb1 298.1G 
+2025-12-15-00h-33min-07sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-33min-07sec: disk : sdc 465.8G
+2025-12-15-00h-33min-07sec: partition : sdc1 465.8G 
+2025-12-15-00h-33min-07sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-33min-07sec: disk : sdd 29.8G
+2025-12-15-00h-33min-07sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-33min-12sec: disk : sda 447.1G
+2025-12-15-00h-33min-12sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-33min-12sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-33min-12sec: partition : sda4 437.1G 
+2025-12-15-00h-33min-12sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-33min-12sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-33min-12sec: disk : sdb 298.1G
+2025-12-15-00h-33min-12sec: partition : sdb1 298.1G 
+2025-12-15-00h-33min-12sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-33min-12sec: disk : sdc 465.8G
+2025-12-15-00h-33min-12sec: partition : sdc1 465.8G 
+2025-12-15-00h-33min-12sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-33min-12sec: disk : sdd 29.8G
+2025-12-15-00h-33min-12sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-33min-16sec: disk : sda 447.1G
+2025-12-15-00h-33min-16sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-33min-16sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-33min-16sec: partition : sda4 437.1G 
+2025-12-15-00h-33min-16sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-33min-16sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-33min-16sec: disk : sdb 298.1G
+2025-12-15-00h-33min-16sec: partition : sdb1 298.1G 
+2025-12-15-00h-33min-16sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-33min-16sec: disk : sdc 465.8G
+2025-12-15-00h-33min-16sec: partition : sdc1 465.8G 
+2025-12-15-00h-33min-16sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-33min-16sec: disk : sdd 29.8G
+2025-12-15-00h-33min-16sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-33min-20sec: disk : sda 447.1G
+2025-12-15-00h-33min-20sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-33min-20sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-33min-20sec: partition : sda4 437.1G 
+2025-12-15-00h-33min-20sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-33min-20sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-33min-20sec: disk : sdb 298.1G
+2025-12-15-00h-33min-20sec: partition : sdb1 298.1G 
+2025-12-15-00h-33min-20sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-33min-20sec: disk : sdc 465.8G
+2025-12-15-00h-33min-20sec: partition : sdc1 465.8G 
+2025-12-15-00h-33min-20sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-33min-20sec: disk : sdd 29.8G
+2025-12-15-00h-33min-20sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-33min-25sec: disk : sda 447.1G
+2025-12-15-00h-33min-25sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-33min-25sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-33min-25sec: partition : sda4 437.1G 
+2025-12-15-00h-33min-25sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-33min-25sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-33min-25sec: disk : sdb 298.1G
+2025-12-15-00h-33min-25sec: partition : sdb1 298.1G 
+2025-12-15-00h-33min-25sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-33min-25sec: disk : sdc 465.8G
+2025-12-15-00h-33min-25sec: partition : sdc1 465.8G 
+2025-12-15-00h-33min-25sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-33min-25sec: disk : sdd 29.8G
+2025-12-15-00h-33min-25sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-33min-29sec: disk : sda 447.1G
+2025-12-15-00h-33min-29sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-33min-29sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-33min-29sec: partition : sda4 437.1G 
+2025-12-15-00h-33min-29sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-33min-29sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-33min-29sec: disk : sdb 298.1G
+2025-12-15-00h-33min-29sec: partition : sdb1 298.1G 
+2025-12-15-00h-33min-29sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-33min-29sec: disk : sdc 465.8G
+2025-12-15-00h-33min-29sec: partition : sdc1 465.8G 
+2025-12-15-00h-33min-29sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-33min-29sec: disk : sdd 29.8G
+2025-12-15-00h-33min-29sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-33min-33sec: disk : sda 447.1G
+2025-12-15-00h-33min-33sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-33min-33sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-33min-33sec: partition : sda4 437.1G 
+2025-12-15-00h-33min-33sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-33min-33sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-33min-33sec: disk : sdb 298.1G
+2025-12-15-00h-33min-33sec: partition : sdb1 298.1G 
+2025-12-15-00h-33min-33sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-33min-33sec: disk : sdc 465.8G
+2025-12-15-00h-33min-33sec: partition : sdc1 465.8G 
+2025-12-15-00h-33min-33sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-33min-33sec: disk : sdd 29.8G
+2025-12-15-00h-33min-33sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-33min-38sec: disk : sda 447.1G
+2025-12-15-00h-33min-38sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-33min-38sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-33min-38sec: partition : sda4 437.1G 
+2025-12-15-00h-33min-38sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-33min-38sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-33min-38sec: disk : sdb 298.1G
+2025-12-15-00h-33min-38sec: partition : sdb1 298.1G 
+2025-12-15-00h-33min-38sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-33min-38sec: disk : sdc 465.8G
+2025-12-15-00h-33min-38sec: partition : sdc1 465.8G 
+2025-12-15-00h-33min-38sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-33min-38sec: disk : sdd 29.8G
+2025-12-15-00h-33min-38sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-33min-42sec: disk : sda 447.1G
+2025-12-15-00h-33min-42sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-33min-42sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-33min-42sec: partition : sda4 437.1G 
+2025-12-15-00h-33min-42sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-33min-42sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-33min-42sec: disk : sdb 298.1G
+2025-12-15-00h-33min-42sec: partition : sdb1 298.1G 
+2025-12-15-00h-33min-42sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-33min-42sec: disk : sdc 465.8G
+2025-12-15-00h-33min-42sec: partition : sdc1 465.8G 
+2025-12-15-00h-33min-42sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-33min-42sec: disk : sdd 29.8G
+2025-12-15-00h-33min-42sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-33min-46sec: disk : sda 447.1G
+2025-12-15-00h-33min-46sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-33min-46sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-33min-46sec: partition : sda4 437.1G 
+2025-12-15-00h-33min-46sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-33min-46sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-33min-46sec: disk : sdb 298.1G
+2025-12-15-00h-33min-46sec: partition : sdb1 298.1G 
+2025-12-15-00h-33min-46sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-33min-46sec: disk : sdc 465.8G
+2025-12-15-00h-33min-46sec: partition : sdc1 465.8G 
+2025-12-15-00h-33min-46sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-33min-46sec: disk : sdd 29.8G
+2025-12-15-00h-33min-46sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-33min-51sec: disk : sda 447.1G
+2025-12-15-00h-33min-51sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-33min-51sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-33min-51sec: partition : sda4 437.1G 
+2025-12-15-00h-33min-51sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-33min-51sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-33min-51sec: disk : sdb 298.1G
+2025-12-15-00h-33min-51sec: partition : sdb1 298.1G 
+2025-12-15-00h-33min-51sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-33min-51sec: disk : sdc 465.8G
+2025-12-15-00h-33min-51sec: partition : sdc1 465.8G 
+2025-12-15-00h-33min-51sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-33min-51sec: disk : sdd 29.8G
+2025-12-15-00h-33min-51sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-33min-55sec: disk : sda 447.1G
+2025-12-15-00h-33min-55sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-33min-55sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-33min-55sec: partition : sda4 437.1G 
+2025-12-15-00h-33min-55sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-33min-55sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-33min-55sec: disk : sdb 298.1G
+2025-12-15-00h-33min-55sec: partition : sdb1 298.1G 
+2025-12-15-00h-33min-55sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-33min-55sec: disk : sdc 465.8G
+2025-12-15-00h-33min-55sec: partition : sdc1 465.8G 
+2025-12-15-00h-33min-55sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-33min-55sec: disk : sdd 29.8G
+2025-12-15-00h-33min-55sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-33min-59sec: disk : sda 447.1G
+2025-12-15-00h-33min-59sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-33min-59sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-33min-59sec: partition : sda4 437.1G 
+2025-12-15-00h-33min-59sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-33min-59sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-33min-59sec: disk : sdb 298.1G
+2025-12-15-00h-33min-59sec: partition : sdb1 298.1G 
+2025-12-15-00h-33min-59sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-33min-59sec: disk : sdc 465.8G
+2025-12-15-00h-33min-59sec: partition : sdc1 465.8G 
+2025-12-15-00h-33min-59sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-33min-59sec: disk : sdd 29.8G
+2025-12-15-00h-33min-59sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-34min-04sec: disk : sda 447.1G
+2025-12-15-00h-34min-04sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-34min-04sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-34min-04sec: partition : sda4 437.1G 
+2025-12-15-00h-34min-04sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-34min-04sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-34min-04sec: disk : sdb 298.1G
+2025-12-15-00h-34min-04sec: partition : sdb1 298.1G 
+2025-12-15-00h-34min-04sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-34min-04sec: disk : sdc 465.8G
+2025-12-15-00h-34min-04sec: partition : sdc1 465.8G 
+2025-12-15-00h-34min-04sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-34min-04sec: disk : sdd 29.8G
+2025-12-15-00h-34min-04sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-34min-08sec: disk : sda 447.1G
+2025-12-15-00h-34min-08sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-34min-08sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-34min-08sec: partition : sda4 437.1G 
+2025-12-15-00h-34min-08sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-34min-08sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-34min-08sec: disk : sdb 298.1G
+2025-12-15-00h-34min-08sec: partition : sdb1 298.1G 
+2025-12-15-00h-34min-08sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-34min-08sec: disk : sdc 465.8G
+2025-12-15-00h-34min-08sec: partition : sdc1 465.8G 
+2025-12-15-00h-34min-08sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-34min-08sec: disk : sdd 29.8G
+2025-12-15-00h-34min-08sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-34min-12sec: disk : sda 447.1G
+2025-12-15-00h-34min-12sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-34min-12sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-34min-12sec: partition : sda4 437.1G 
+2025-12-15-00h-34min-12sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-34min-12sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-34min-12sec: disk : sdb 298.1G
+2025-12-15-00h-34min-12sec: partition : sdb1 298.1G 
+2025-12-15-00h-34min-12sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-34min-12sec: disk : sdc 465.8G
+2025-12-15-00h-34min-12sec: partition : sdc1 465.8G 
+2025-12-15-00h-34min-12sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-34min-12sec: disk : sdd 29.8G
+2025-12-15-00h-34min-12sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-34min-17sec: disk : sda 447.1G
+2025-12-15-00h-34min-17sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-34min-17sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-34min-17sec: partition : sda4 437.1G 
+2025-12-15-00h-34min-17sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-34min-17sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-34min-17sec: disk : sdb 298.1G
+2025-12-15-00h-34min-17sec: partition : sdb1 298.1G 
+2025-12-15-00h-34min-17sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-34min-17sec: disk : sdc 465.8G
+2025-12-15-00h-34min-17sec: partition : sdc1 465.8G 
+2025-12-15-00h-34min-17sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-34min-17sec: disk : sdd 29.8G
+2025-12-15-00h-34min-17sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-34min-21sec: disk : sda 447.1G
+2025-12-15-00h-34min-21sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-34min-21sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-34min-21sec: partition : sda4 437.1G 
+2025-12-15-00h-34min-21sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-34min-21sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-34min-21sec: disk : sdb 298.1G
+2025-12-15-00h-34min-21sec: partition : sdb1 298.1G 
+2025-12-15-00h-34min-21sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-34min-21sec: disk : sdc 465.8G
+2025-12-15-00h-34min-21sec: partition : sdc1 465.8G 
+2025-12-15-00h-34min-21sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-34min-21sec: disk : sdd 29.8G
+2025-12-15-00h-34min-21sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-34min-25sec: disk : sda 447.1G
+2025-12-15-00h-34min-25sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-34min-25sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-34min-25sec: partition : sda4 437.1G 
+2025-12-15-00h-34min-25sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-34min-25sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-34min-25sec: disk : sdb 298.1G
+2025-12-15-00h-34min-25sec: partition : sdb1 298.1G 
+2025-12-15-00h-34min-25sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-34min-25sec: disk : sdc 465.8G
+2025-12-15-00h-34min-25sec: partition : sdc1 465.8G 
+2025-12-15-00h-34min-25sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-34min-25sec: disk : sdd 29.8G
+2025-12-15-00h-34min-25sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-34min-30sec: disk : sda 447.1G
+2025-12-15-00h-34min-30sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-34min-30sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-34min-30sec: partition : sda4 437.1G 
+2025-12-15-00h-34min-30sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-34min-30sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-34min-30sec: disk : sdb 298.1G
+2025-12-15-00h-34min-30sec: partition : sdb1 298.1G 
+2025-12-15-00h-34min-30sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-34min-30sec: disk : sdc 465.8G
+2025-12-15-00h-34min-30sec: partition : sdc1 465.8G 
+2025-12-15-00h-34min-30sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-34min-30sec: disk : sdd 29.8G
+2025-12-15-00h-34min-30sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-34min-34sec: disk : sda 447.1G
+2025-12-15-00h-34min-34sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-34min-34sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-34min-34sec: partition : sda4 437.1G 
+2025-12-15-00h-34min-34sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-34min-34sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-34min-34sec: disk : sdb 298.1G
+2025-12-15-00h-34min-34sec: partition : sdb1 298.1G 
+2025-12-15-00h-34min-34sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-34min-34sec: disk : sdc 465.8G
+2025-12-15-00h-34min-34sec: partition : sdc1 465.8G 
+2025-12-15-00h-34min-34sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-34min-34sec: disk : sdd 29.8G
+2025-12-15-00h-34min-34sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-34min-38sec: disk : sda 447.1G
+2025-12-15-00h-34min-38sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-34min-38sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-34min-38sec: partition : sda4 437.1G 
+2025-12-15-00h-34min-38sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-34min-38sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-34min-38sec: disk : sdb 298.1G
+2025-12-15-00h-34min-38sec: partition : sdb1 298.1G 
+2025-12-15-00h-34min-38sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-34min-38sec: disk : sdc 465.8G
+2025-12-15-00h-34min-38sec: partition : sdc1 465.8G 
+2025-12-15-00h-34min-38sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-34min-38sec: disk : sdd 29.8G
+2025-12-15-00h-34min-38sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-34min-43sec: disk : sda 447.1G
+2025-12-15-00h-34min-43sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-34min-43sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-34min-43sec: partition : sda4 437.1G 
+2025-12-15-00h-34min-43sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-34min-43sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-34min-43sec: disk : sdb 298.1G
+2025-12-15-00h-34min-43sec: partition : sdb1 298.1G 
+2025-12-15-00h-34min-43sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-34min-43sec: disk : sdc 465.8G
+2025-12-15-00h-34min-43sec: partition : sdc1 465.8G 
+2025-12-15-00h-34min-43sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-34min-43sec: disk : sdd 29.8G
+2025-12-15-00h-34min-43sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-34min-47sec: disk : sda 447.1G
+2025-12-15-00h-34min-47sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-34min-47sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-34min-47sec: partition : sda4 437.1G 
+2025-12-15-00h-34min-47sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-34min-47sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-34min-47sec: disk : sdb 298.1G
+2025-12-15-00h-34min-47sec: partition : sdb1 298.1G 
+2025-12-15-00h-34min-47sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-34min-47sec: disk : sdc 465.8G
+2025-12-15-00h-34min-47sec: partition : sdc1 465.8G 
+2025-12-15-00h-34min-47sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-34min-47sec: disk : sdd 29.8G
+2025-12-15-00h-34min-47sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-34min-51sec: disk : sda 447.1G
+2025-12-15-00h-34min-51sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-34min-51sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-34min-51sec: partition : sda4 437.1G 
+2025-12-15-00h-34min-51sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-34min-51sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-34min-51sec: disk : sdb 298.1G
+2025-12-15-00h-34min-51sec: partition : sdb1 298.1G 
+2025-12-15-00h-34min-51sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-34min-51sec: disk : sdc 465.8G
+2025-12-15-00h-34min-51sec: partition : sdc1 465.8G 
+2025-12-15-00h-34min-51sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-34min-51sec: disk : sdd 29.8G
+2025-12-15-00h-34min-51sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-34min-56sec: disk : sda 447.1G
+2025-12-15-00h-34min-56sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-34min-56sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-34min-56sec: partition : sda4 437.1G 
+2025-12-15-00h-34min-56sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-34min-56sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-34min-56sec: disk : sdb 298.1G
+2025-12-15-00h-34min-56sec: partition : sdb1 298.1G 
+2025-12-15-00h-34min-56sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-34min-56sec: disk : sdc 465.8G
+2025-12-15-00h-34min-56sec: partition : sdc1 465.8G 
+2025-12-15-00h-34min-56sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-34min-56sec: disk : sdd 29.8G
+2025-12-15-00h-34min-56sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-35min-00sec: disk : sda 447.1G
+2025-12-15-00h-35min-00sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-35min-00sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-35min-00sec: partition : sda4 437.1G 
+2025-12-15-00h-35min-00sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-35min-00sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-35min-00sec: disk : sdb 298.1G
+2025-12-15-00h-35min-00sec: partition : sdb1 298.1G 
+2025-12-15-00h-35min-00sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-35min-00sec: disk : sdc 465.8G
+2025-12-15-00h-35min-00sec: partition : sdc1 465.8G 
+2025-12-15-00h-35min-00sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-35min-00sec: disk : sdd 29.8G
+2025-12-15-00h-35min-00sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-35min-04sec: disk : sda 447.1G
+2025-12-15-00h-35min-04sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-35min-04sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-35min-04sec: partition : sda4 437.1G 
+2025-12-15-00h-35min-04sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-35min-04sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-35min-04sec: disk : sdb 298.1G
+2025-12-15-00h-35min-04sec: partition : sdb1 298.1G 
+2025-12-15-00h-35min-04sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-35min-04sec: disk : sdc 465.8G
+2025-12-15-00h-35min-04sec: partition : sdc1 465.8G 
+2025-12-15-00h-35min-04sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-35min-04sec: disk : sdd 29.8G
+2025-12-15-00h-35min-04sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-35min-09sec: disk : sda 447.1G
+2025-12-15-00h-35min-09sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-35min-09sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-35min-09sec: partition : sda4 437.1G 
+2025-12-15-00h-35min-09sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-35min-09sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-35min-09sec: disk : sdb 298.1G
+2025-12-15-00h-35min-09sec: partition : sdb1 298.1G 
+2025-12-15-00h-35min-09sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-35min-09sec: disk : sdc 465.8G
+2025-12-15-00h-35min-09sec: partition : sdc1 465.8G 
+2025-12-15-00h-35min-09sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-35min-09sec: disk : sdd 29.8G
+2025-12-15-00h-35min-09sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-35min-13sec: disk : sda 447.1G
+2025-12-15-00h-35min-13sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-35min-13sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-35min-13sec: partition : sda4 437.1G 
+2025-12-15-00h-35min-13sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-35min-13sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-35min-13sec: disk : sdb 298.1G
+2025-12-15-00h-35min-13sec: partition : sdb1 298.1G 
+2025-12-15-00h-35min-13sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-35min-13sec: disk : sdc 465.8G
+2025-12-15-00h-35min-13sec: partition : sdc1 465.8G 
+2025-12-15-00h-35min-13sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-35min-13sec: disk : sdd 29.8G
+2025-12-15-00h-35min-13sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-35min-17sec: disk : sda 447.1G
+2025-12-15-00h-35min-17sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-35min-17sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-35min-17sec: partition : sda4 437.1G 
+2025-12-15-00h-35min-17sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-35min-17sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-35min-17sec: disk : sdb 298.1G
+2025-12-15-00h-35min-17sec: partition : sdb1 298.1G 
+2025-12-15-00h-35min-17sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-35min-17sec: disk : sdc 465.8G
+2025-12-15-00h-35min-17sec: partition : sdc1 465.8G 
+2025-12-15-00h-35min-17sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-35min-17sec: disk : sdd 29.8G
+2025-12-15-00h-35min-17sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-35min-21sec: disk : sda 447.1G
+2025-12-15-00h-35min-21sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-35min-21sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-35min-21sec: partition : sda4 437.1G 
+2025-12-15-00h-35min-21sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-35min-21sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-35min-21sec: disk : sdb 298.1G
+2025-12-15-00h-35min-21sec: partition : sdb1 298.1G 
+2025-12-15-00h-35min-21sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-35min-21sec: disk : sdc 465.8G
+2025-12-15-00h-35min-21sec: partition : sdc1 465.8G 
+2025-12-15-00h-35min-21sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-35min-21sec: disk : sdd 29.8G
+2025-12-15-00h-35min-21sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-35min-26sec: disk : sda 447.1G
+2025-12-15-00h-35min-26sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-35min-26sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-35min-26sec: partition : sda4 437.1G 
+2025-12-15-00h-35min-26sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-35min-26sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-35min-26sec: disk : sdb 298.1G
+2025-12-15-00h-35min-26sec: partition : sdb1 298.1G 
+2025-12-15-00h-35min-26sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-35min-26sec: disk : sdc 465.8G
+2025-12-15-00h-35min-26sec: partition : sdc1 465.8G 
+2025-12-15-00h-35min-26sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-35min-26sec: disk : sdd 29.8G
+2025-12-15-00h-35min-26sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-35min-30sec: disk : sda 447.1G
+2025-12-15-00h-35min-30sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-35min-30sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-35min-30sec: partition : sda4 437.1G 
+2025-12-15-00h-35min-30sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-35min-30sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-35min-30sec: disk : sdb 298.1G
+2025-12-15-00h-35min-30sec: partition : sdb1 298.1G 
+2025-12-15-00h-35min-30sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-35min-30sec: disk : sdc 465.8G
+2025-12-15-00h-35min-30sec: partition : sdc1 465.8G 
+2025-12-15-00h-35min-30sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-35min-30sec: disk : sdd 29.8G
+2025-12-15-00h-35min-30sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-35min-34sec: disk : sda 447.1G
+2025-12-15-00h-35min-34sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-35min-34sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-35min-34sec: partition : sda4 437.1G 
+2025-12-15-00h-35min-34sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-35min-34sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-35min-34sec: disk : sdb 298.1G
+2025-12-15-00h-35min-34sec: partition : sdb1 298.1G 
+2025-12-15-00h-35min-34sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-35min-34sec: disk : sdc 465.8G
+2025-12-15-00h-35min-34sec: partition : sdc1 465.8G 
+2025-12-15-00h-35min-34sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-35min-34sec: disk : sdd 29.8G
+2025-12-15-00h-35min-34sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-35min-39sec: disk : sda 447.1G
+2025-12-15-00h-35min-39sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-35min-39sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-35min-39sec: partition : sda4 437.1G 
+2025-12-15-00h-35min-39sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-35min-39sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-35min-39sec: disk : sdb 298.1G
+2025-12-15-00h-35min-39sec: partition : sdb1 298.1G 
+2025-12-15-00h-35min-39sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-35min-39sec: disk : sdc 465.8G
+2025-12-15-00h-35min-39sec: partition : sdc1 465.8G 
+2025-12-15-00h-35min-39sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-35min-39sec: disk : sdd 29.8G
+2025-12-15-00h-35min-39sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-35min-43sec: disk : sda 447.1G
+2025-12-15-00h-35min-43sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-35min-43sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-35min-43sec: partition : sda4 437.1G 
+2025-12-15-00h-35min-43sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-35min-43sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-35min-43sec: disk : sdb 298.1G
+2025-12-15-00h-35min-43sec: partition : sdb1 298.1G 
+2025-12-15-00h-35min-43sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-35min-43sec: disk : sdc 465.8G
+2025-12-15-00h-35min-43sec: partition : sdc1 465.8G 
+2025-12-15-00h-35min-43sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-35min-43sec: disk : sdd 29.8G
+2025-12-15-00h-35min-43sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-35min-47sec: disk : sda 447.1G
+2025-12-15-00h-35min-47sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-35min-47sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-35min-47sec: partition : sda4 437.1G 
+2025-12-15-00h-35min-47sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-35min-47sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-35min-47sec: disk : sdb 298.1G
+2025-12-15-00h-35min-47sec: partition : sdb1 298.1G 
+2025-12-15-00h-35min-47sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-35min-47sec: disk : sdc 465.8G
+2025-12-15-00h-35min-47sec: partition : sdc1 465.8G 
+2025-12-15-00h-35min-47sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-35min-47sec: disk : sdd 29.8G
+2025-12-15-00h-35min-47sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-35min-52sec: disk : sda 447.1G
+2025-12-15-00h-35min-52sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-35min-52sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-35min-52sec: partition : sda4 437.1G 
+2025-12-15-00h-35min-52sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-35min-52sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-35min-52sec: disk : sdb 298.1G
+2025-12-15-00h-35min-52sec: partition : sdb1 298.1G 
+2025-12-15-00h-35min-52sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-35min-52sec: disk : sdc 465.8G
+2025-12-15-00h-35min-52sec: partition : sdc1 465.8G 
+2025-12-15-00h-35min-52sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-35min-52sec: disk : sdd 29.8G
+2025-12-15-00h-35min-52sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-35min-56sec: disk : sda 447.1G
+2025-12-15-00h-35min-56sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-35min-56sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-35min-56sec: partition : sda4 437.1G 
+2025-12-15-00h-35min-56sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-35min-56sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-35min-56sec: disk : sdb 298.1G
+2025-12-15-00h-35min-56sec: partition : sdb1 298.1G 
+2025-12-15-00h-35min-56sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-35min-56sec: disk : sdc 465.8G
+2025-12-15-00h-35min-56sec: partition : sdc1 465.8G 
+2025-12-15-00h-35min-56sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-35min-56sec: disk : sdd 29.8G
+2025-12-15-00h-35min-56sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-36min-00sec: disk : sda 447.1G
+2025-12-15-00h-36min-00sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-36min-00sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-36min-00sec: partition : sda4 437.1G 
+2025-12-15-00h-36min-00sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-36min-00sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-36min-00sec: disk : sdb 298.1G
+2025-12-15-00h-36min-00sec: partition : sdb1 298.1G 
+2025-12-15-00h-36min-00sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-36min-00sec: disk : sdc 465.8G
+2025-12-15-00h-36min-00sec: partition : sdc1 465.8G 
+2025-12-15-00h-36min-00sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-36min-01sec: disk : sdd 29.8G
+2025-12-15-00h-36min-01sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-36min-05sec: disk : sda 447.1G
+2025-12-15-00h-36min-05sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-36min-05sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-36min-05sec: partition : sda4 437.1G 
+2025-12-15-00h-36min-05sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-36min-05sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-36min-05sec: disk : sdb 298.1G
+2025-12-15-00h-36min-05sec: partition : sdb1 298.1G 
+2025-12-15-00h-36min-05sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-36min-05sec: disk : sdc 465.8G
+2025-12-15-00h-36min-05sec: partition : sdc1 465.8G 
+2025-12-15-00h-36min-05sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-36min-05sec: disk : sdd 29.8G
+2025-12-15-00h-36min-05sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-36min-09sec: disk : sda 447.1G
+2025-12-15-00h-36min-09sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-36min-09sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-36min-09sec: partition : sda4 437.1G 
+2025-12-15-00h-36min-09sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-36min-09sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-36min-09sec: disk : sdb 298.1G
+2025-12-15-00h-36min-09sec: partition : sdb1 298.1G 
+2025-12-15-00h-36min-09sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-36min-09sec: disk : sdc 465.8G
+2025-12-15-00h-36min-09sec: partition : sdc1 465.8G 
+2025-12-15-00h-36min-09sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-36min-09sec: disk : sdd 29.8G
+2025-12-15-00h-36min-09sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-36min-13sec: disk : sda 447.1G
+2025-12-15-00h-36min-13sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-36min-13sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-36min-13sec: partition : sda4 437.1G 
+2025-12-15-00h-36min-13sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-36min-13sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-36min-13sec: disk : sdb 298.1G
+2025-12-15-00h-36min-13sec: partition : sdb1 298.1G 
+2025-12-15-00h-36min-13sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-36min-13sec: disk : sdc 465.8G
+2025-12-15-00h-36min-13sec: partition : sdc1 465.8G 
+2025-12-15-00h-36min-13sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-36min-13sec: disk : sdd 29.8G
+2025-12-15-00h-36min-13sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-36min-18sec: disk : sda 447.1G
+2025-12-15-00h-36min-18sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-36min-18sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-36min-18sec: partition : sda4 437.1G 
+2025-12-15-00h-36min-18sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-36min-18sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-36min-18sec: disk : sdb 298.1G
+2025-12-15-00h-36min-18sec: partition : sdb1 298.1G 
+2025-12-15-00h-36min-18sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-36min-18sec: disk : sdc 465.8G
+2025-12-15-00h-36min-18sec: partition : sdc1 465.8G 
+2025-12-15-00h-36min-18sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-36min-18sec: disk : sdd 29.8G
+2025-12-15-00h-36min-18sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-36min-22sec: disk : sda 447.1G
+2025-12-15-00h-36min-22sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-36min-22sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-36min-22sec: partition : sda4 437.1G 
+2025-12-15-00h-36min-22sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-36min-22sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-36min-22sec: disk : sdb 298.1G
+2025-12-15-00h-36min-22sec: partition : sdb1 298.1G 
+2025-12-15-00h-36min-22sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-36min-22sec: disk : sdc 465.8G
+2025-12-15-00h-36min-22sec: partition : sdc1 465.8G 
+2025-12-15-00h-36min-22sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-36min-22sec: disk : sdd 29.8G
+2025-12-15-00h-36min-22sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-36min-26sec: disk : sda 447.1G
+2025-12-15-00h-36min-26sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-36min-26sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-36min-26sec: partition : sda4 437.1G 
+2025-12-15-00h-36min-26sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-36min-26sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-36min-26sec: disk : sdb 298.1G
+2025-12-15-00h-36min-26sec: partition : sdb1 298.1G 
+2025-12-15-00h-36min-26sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-36min-26sec: disk : sdc 465.8G
+2025-12-15-00h-36min-26sec: partition : sdc1 465.8G 
+2025-12-15-00h-36min-26sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-36min-26sec: disk : sdd 29.8G
+2025-12-15-00h-36min-26sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-36min-31sec: disk : sda 447.1G
+2025-12-15-00h-36min-31sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-36min-31sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-36min-31sec: partition : sda4 437.1G 
+2025-12-15-00h-36min-31sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-36min-31sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-36min-31sec: disk : sdb 298.1G
+2025-12-15-00h-36min-31sec: partition : sdb1 298.1G 
+2025-12-15-00h-36min-31sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-36min-31sec: disk : sdc 465.8G
+2025-12-15-00h-36min-31sec: partition : sdc1 465.8G 
+2025-12-15-00h-36min-31sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-36min-31sec: disk : sdd 29.8G
+2025-12-15-00h-36min-31sec: partition : sdd1 29.8G 
+===============================
+2025-12-15-00h-36min-35sec: disk : sda 447.1G
+2025-12-15-00h-36min-35sec: partition : sda1 1G part /boot/EFI 480K used 1%
+2025-12-15-00h-36min-35sec: partition : sda2 1G part /boot 106M used 12%
+2025-12-15-00h-36min-35sec: partition : sda4 437.1G 
+2025-12-15-00h-36min-35sec: partition : system_volgroup0-lv_root 150G lvm / 18G used 13%
+2025-12-15-00h-36min-35sec: partition : system_volgroup0-lv_home 287.1G lvm /home 15G used 6%
+2025-12-15-00h-36min-35sec: disk : sdb 298.1G
+2025-12-15-00h-36min-35sec: partition : sdb1 298.1G 
+2025-12-15-00h-36min-35sec: partition : secdata_volgroup0-lv_secdata 298.1G 
+2025-12-15-00h-36min-35sec: disk : sdc 465.8G
+2025-12-15-00h-36min-35sec: partition : sdc1 465.8G 
+2025-12-15-00h-36min-35sec: partition : data_volgroup0-lv_data 465.7G lvm /data 2.1M used 1%
+2025-12-15-00h-36min-35sec: disk : sdd 29.8G
+2025-12-15-00h-36min-35sec: partition : sdd1 29.8G 
+===============================

@@ -4,7 +4,7 @@ export default function CpuGpuChart({ cpuData = [], gpuData = [] }) {
   if (!cpuData.length && !gpuData.length) return <p>No CPU/GPU data available</p>;
 
   const formattedData = cpuData.map((c, i) => ({
-    time: c.time.split("-")[3] + ":" + c.time.split("-")[4], // e.g., hh:mm
+    time: c.time.split(" ")[1] || c.time, // e.g., hh:mm
     CPU: c.usage,
     CPU_temp: c.temperature,
     GPU: gpuData[i] ? gpuData[i].usage : null,
