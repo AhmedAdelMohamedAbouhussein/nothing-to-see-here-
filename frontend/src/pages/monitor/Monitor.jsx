@@ -110,7 +110,7 @@ function Monitor() {
 
     return (
         <div className={styles.main}>
-            {/*<Navbar />*/}
+            <Navbar />
             <div className={styles.container}>
                 <div className={styles.top}>
                     <h2 className={styles.title}>Live Monitor</h2>

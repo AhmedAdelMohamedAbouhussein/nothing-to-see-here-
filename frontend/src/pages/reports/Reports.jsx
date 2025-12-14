@@ -1,12 +1,17 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+import CpuGpuChart from "../../charts/CpuGpuChart";
+import MemoryCircular from "../../charts/MemoryCircular";
+import DiskBarChart from "../../charts/DiskBarChart";
+import MemoryLineChart from "../../charts/MemoryLineChart";
+
 import styles from "./Reports.module.css";
 
 function Reports() {
     const [folders, setFolders] = useState([]);
     const [selectedFolder, setSelectedFolder] = useState(null);
-    const [files, setFiles] = useState([]);
+    const [folderData, setFolderData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
@@ -23,89 +28,72 @@ function Reports() {
     }, []);
 
     // Open a folder
-    const openFolder = async (folderName) => 
-    {
+    const openFolder = async (folderName) => {
         setSelectedFolder(folderName);
         setLoading(true);
         setError(null);
 
-        try {
+        try 
+        {
             const res = await axios.get(
                 `http://localhost:8000/reports/folders/${folderName}`
             );
-
-            setFiles(res.data.files ?? res.data);
-        } catch {
+            setFolderData(res.data); // save the folder logs
+            console.log(folderData);
+        } 
+        catch 
+        {
             setError("Failed to load folder content");
-        } finally {
+        } 
+        finally 
+        {
             setLoading(false);
         }
     };
 
+    const renderMetrics = () => {
+      if (!folderData) return null;
+
+      const { cpu, gpu, memory, disk: disks } = folderData;
+
+      return (
+        <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
+          <CpuGpuChart cpuData={cpu} gpuData={gpu} />
+          {/* RAM + Virtual Memory Line Chart */}
+          <MemoryLineChart ram={memory.ram} virtual={memory.virtual} />
+          <DiskBarChart diskSnapshots={disks} />
+        </div>
+      );
+    };
+
     return (
-        <div className={styles.container}>
+        <div className={styles.main}>
             <div className={styles.sidebar}>
-                <h3>Reports</h3>
-
-                {folders.length === 0 && !error && (
-                    <p>No reports found</p>
-                )}
-
-                {folders.map((f) => {
-                    const folderName = f.raw ?? f;
-
-                    return (
-                        <div
-                            key={folderName}
-                            className={`${styles.folder} ${
-                                selectedFolder === folderName
-                                    ? styles.active
-                                    : ""
-                            }`}
-                            onClick={() => openFolder(folderName)}
-                        >
-                            {f.date ? (
-                                <>
-                                    <strong>{f.date}</strong>
-                                    <div className={styles.time}>
-                                        {f.time}
-                                    </div>
-                                </>
-                            ) : (
-                                folderName
-                            )}
-                        </div>
-                    );
-                })}
+                <div className={styles.asideTop}>
+                    <h3>Folders</h3>
+                </div>
+                {folders.map((f) => (
+                    <div
+                        key={f}
+                        className={`${styles.folder} ${selectedFolder === f ? styles.active : ""}`}
+                        onClick={() => openFolder(f)}
+                    >
+                        {f}
+                    </div>
+                ))}
             </div>
 
-            {/* Right panel: files */}
-            <div className={styles.content}>
-                {!selectedFolder && (
-                    <p>Select a report folder</p>
-                )}
+            <div className={styles.container}>
+                <div className={styles.top}>
+                    <h2 className={styles.title}>Reports</h2>
+                </div>
 
-                {loading && <p>Loading...</p>}
-
-                {error && (
-                    <p style={{ color: "red" }}>{error}</p>
-                )}
-
-                {selectedFolder && !loading && !error && (
-                    <>
-                        <h3>{selectedFolder}</h3>
-
-                        {files.length === 0 ? (
-                            <p>No files in this folder</p>
-                        ) : (
-                            <ul>
-                                {files.map((file) => (
-                                    <li key={file}>{file}</li>
-                                ))}
-                            </ul>
-                        )}
-                    </>
-                )}
+                <div className={styles.body}>
+                    {error && <p className={styles.error}>{error}</p>}
+                    {loading && <p>Loading...</p>}
+                    {!loading && !selectedFolder && <p>Select a report folder</p>}
+                    {!loading && selectedFolder && renderMetrics()}
+                </div>
             </div>
         </div>
     );

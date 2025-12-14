@@ -1,6 +1,15 @@
 import fs from "fs";
 import path from "path";
 
+import {
+    parseCpuLog,
+    parseGpuLog,
+    parseMemoryLog,
+    parseDiskLog,
+    parseNetworkLog,
+    smartstatusLog
+} from "../utils/parseLogs.js";
+
 const REPORTS_DIR = path.join(process.cwd(), "system_reports");
 
 export const getFolderLogs = (req, res) => {
@@ -17,7 +26,6 @@ export const getFolderLogs = (req, res) => {
 
     const folderPath = path.join(REPORTS_DIR, folderName);
 
-    // 📂 Check existence
     if (!fs.existsSync(folderPath)) {
         return res.status(404).json({
             error: "Folder not found"
@@ -25,23 +33,51 @@ export const getFolderLogs = (req, res) => {
     }
 
     try {
-        const files = fs
-            .readdirSync(folderPath)
-            .filter(file =>
-                fs.statSync(
-                    path.join(folderPath, file)
-                ).isFile()
-            );
+        const files = fs.readdirSync(folderPath);
 
-        return res.json({
+        const response = {
             folder: folderName,
-            files
-        });
+            cpu: [],
+            gpu: [],
+            memory: { ram: [], virtual: [] },
+            disk: [],
+            network: [],
+            smart: []
+        };
+
+        for (const file of files) {
+            const filePath = path.join(folderPath, file);
+            if (!fs.statSync(filePath).isFile()) continue;
+        
+            switch (file) {
+                case "cpu.log":
+                    response.cpu = parseCpuLog(filePath);
+                    break;
+                case "gpu.log":
+                    response.gpu = parseGpuLog(filePath);
+                    break;
+                case "memory.log":
+                    response.memory = parseMemoryLog(filePath);
+                    break;
+                case "disk.log":
+                    response.disk = parseDiskLog(filePath);
+                    break;
+                case "network.log":
+                    response.network = parseNetworkLog(filePath);
+                    break;
+                case "smart.log":
+                    response.smart = smartstatusLog(filePath);
+                    break;
+            }
+        }
+
+        res.json(response);
+
     } catch (err) {
         console.error(err);
 
         return res.status(500).json({
-            error: "Failed to read folder"
+            error: "Failed to read logs"
         });
     }
 };

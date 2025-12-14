@@ -1,12 +1,20 @@
 #!/bin/bash
 
-LOG_DIR="./system_reports"
+LOG_DIR="../system_reports"
 mkdir -p "$LOG_DIR"
 INTERVAL=10
 
 TIMESTAMP=$(date "+%Y-%m-%d-%Hh-%Mmin-%Ssec")
 REPORT_DIR="$LOG_DIR/$TIMESTAMP"
 mkdir -p "$REPORT_DIR"
+
+# CRITICAL_MEMORY_THRESHOLD=50
+# CRITICAL_VIRTAUL_MEMORY_THRESHOLD=50  
+# CRITICAL_CPU_THRESHOLD=0     
+# CRITICAL_CPU_TEMP_THRESHOLD=50 
+# CRITICAL_GPU_USAGE_THRESHOLD=50  
+# CRITICAL_GPU_TEMP_THRESHOLD=50
+# CRITICAL_DISK_THRESHOLD=90  
 
 
 function cpu
@@ -15,9 +23,17 @@ function cpu
     echo "CPU Usage: $Cpu%"
     Cputemp=$(sensors | awk '/Package id 0/ {gsub(/[+°C]/,"",$4); print $4 "°C"}')
     echo "CPU Temperature: $Cputemp"
+  
+    # if [ "$Cpu" -gt "$CRITICAL_CPU_THRESHOLD" ]; then
+    # echo "ALERT: High CPU Usage ($Cpu%)"
+    # fi
+    # if [ "$Cputemp" -gt "$CRITICAL_CPU_TEMP_THRESHOLD" ]; then
+    # echo "ALERT: High CPU TEMP ($Cputemp%)"
+    # fi
 
+    
     CURRENT_TIME=$(date "+%Y-%m-%d-%Hh-%Mmin-%Ssec")
-    echo "$CURRENT_TIME: CPU=$Cpu CPU_TEMP=$Cputemp" >> "$REPORT_DIR/cpu.log"
+    echo "$CURRENT_TIME: CPU Usage: $Cpu% CPU Temperature: $Cputemp" >> "$REPORT_DIR/cpu.log"
 
     echo "===============================" >> "$REPORT_DIR/cpu.log"
 }
@@ -31,10 +47,14 @@ function memory
     echo "Memory Used: $memoryUsed"
     mermoryTotal=$(free -m | awk '/Mem:/ {printf "%.2f GB\n", $2/1024}')
     echo "Memory Total: $mermoryTotal"
+
+    #if [ "$memoryUtilAverage" -gt "$CRITICAL_MEMORY_THRESHOLD" ]; then
+    #echo "ALERT: High memory Usage ($memoryUtilAverage%)"
+    #fi
     
     CURRENT_TIME=$(date "+%Y-%m-%d-%Hh-%Mmin-%Ssec")
-    echo "$CURRENT_TIME: memoryUtilAverage=$memoryUtilAverage MemoryUsed=$memoryUsed MemoryTotal=$mermoryTotal" >> "$REPORT_DIR/memory.log"
-
+    echo "$CURRENT_TIME: Memory Utilization: $memoryUtilAverage Memory Used: $memoryUsed Memory Total: $mermoryTotal" >> "$REPORT_DIR/memory.log"
+    
     # Get virtual memory 
     VMUtilAverage=$(free | awk '/Swap/ {printf("%3.1f", ($3/$2) * 100)}')
     echo "Virtual Memory Utilization: $VMUtilAverage%"
@@ -42,10 +62,14 @@ function memory
     echo "Virtual Memory Used: $VMUsed"
     VMTotal=$(free -m | awk '/Swap:/ {printf "%.2f GB\n", $2/1024}')
     echo "Virtual Memory Total: $VMTotal"
-    
-    echo "$CURRENT_TIME: VMUtilAverage=$VMUtilAverage VMUsed=$VMUsed VMTotal=$VMTotal" >> "$REPORT_DIR/memory.log"
 
-    echo "===============================" >> "$REPORT_DIR/memory_.log"
+   # if [ "$VMUtilAverage" -gt "$CRITICAL_VIRTAUL_MEMORY_THRESHOLD" ]; then
+   # echo "ALERT: High VIRTUAL MEMORY Usage ($VMUtilAverage%)"
+   # fi
+
+    echo "$CURRENT_TIME: Virtual Memory Utilization: $VMUtilAverage Virtual Memory Used: $VMUsed Virtual Memory Total: $VMTotal" >> "$REPORT_DIR/memory.log"
+
+    echo "===============================" >> "$REPORT_DIR/memory.log"
 }
 
 function gpu
@@ -58,50 +82,61 @@ function gpu
         GPU_Temperature=$(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader)
         echo "GPU Temperature: $GPU_Temperature"
 
-        echo "$CURRENT_TIME: GPU_Utilization=$GPU_Utilization GPU_Temperature=$GPU_Temperature" >> "$REPORT_DIR/gpu.log"
+        
+
+        echo "$CURRENT_TIME: GPU Utilization: $GPU_Utilization GPU Temperature: $GPU_Temperature" >> "$REPORT_DIR/gpu.log"
 
     elif command -v rocm-smi &> /dev/null; then #TODO
-        GPU_Utilization=$(rocm-smi --showuse | awk '/GPU/ {print $3}')
-        echo "GPU Utilization: $GPU_Utilization"
-        GPU_Temperature=$(rocm-smi --showtemp | awk '/GPU/ {print $3}')
-        echo "GPU Temperature: $GPU_Temperature"
+            GPU_Utilization=$(rocm-smi --showuse | awk '/GPU/ {print $3}')
+            echo "GPU Utilization: $GPU_Utilization"
+            GPU_Temperature=$(rocm-smi --showtemp | awk '/GPU/ {print $3}')
+            echo "GPU Temperature: $GPU_Temperature"
 
-        echo "$CURRENT_TIME: GPU_Utilization=$GPU_Utilization GPU_Temperature=$GPU_Temperature" >> "$REPORT_DIR/gpu.log"
+            echo "$CURRENT_TIME: GPU Utilization: $GPU_Utilization GPU Temperature: $GPU_Temperature" >> "$REPORT_DIR/gpu.log"
     
-    #elif command -v intel_gpu_top &> /dev/null; then #TODO
-        #GPU_Utilization=$(sudo timout 20s intel_gpu_top)
-        #echo "GPU Utilization: $GPU_Utilization"
-
-        # echo "$CURRENT_TIME: GPU_Utilization=$GPU_Utilization" >> "$REPORT_DIR/gpu.log"
-    fi
-
-    echo "===============================" >> "$REPORT_DIR/gpu.log"
+    elif command -v intel_gpu_top &> /dev/null; then
+            sudo timeout 0.2s intel_gpu_top > /dev/tty
+            sudo timeout 0.2s intel_gpu_top -o /dev/stdout >> "$REPORT_DIR/gpu.log"
+    fi  
 }
-
 
 function disk 
 {
     # List all block devices except swap and zram
-    lsblk -o NAME,SIZE,TYPE,MOUNTPOINT | while read name size type mount; do
+    lsblk -no NAME,SIZE,TYPE,MOUNTPOINT | while read name size type mount; do
         # Skip empty lines
         [ -z "$name" ] && continue
 
-        # Skip swap partitions and zram devices
-        if [[ "$type" == "swap" ]] || [[ "$name" == zram* ]]; then
+        # Skip swap partitions, zram, and LVM logical volumes
+        if [[ "$mount" == "[SWAP]" ]] || [[ "$name" == zram* ]]; then
             continue
         fi
 
+
+        # Remove └─ or ├─ from the name
+        clean_name=$(echo "$name" | sed 's/^[└├─]*//')
+
+        CURRENT_TIME=$(date "+%Y-%m-%d-%Hh-%Mmin-%Ssec")
+
         # If the mountpoint exists and is not "[SWAP]", get used space
-        if [ -n "$mount" ] && [[ "$mount" != "[SWAP]" ]]; then
+        if [ -n "$mount" ] && [[ "$type" != "crypt" ]]; then
+            
             used=$(df -h "$mount" | awk 'NR==2 {print $3 " used"}')
-            echo -e "$name\t$size\t$type\t$mount\t$used"
+            use_percent=$(df -h "$mount" | awk 'NR==2 {print $5}')
+            
+            echo -e "partition : $clean_name $size $type $mount $used $use_percent"
 
-            echo -e "$name\t$size\t$type\t$mount\t$used" >> "$REPORT_DIR/disk.log"
+            echo -e "$CURRENT_TIME: partition : $clean_name $size $type $mount $used $use_percent" >> "$REPORT_DIR/disk.log"
 
-        else
-            echo -e "$name\t$size\t$type\t$mount"
+        elif [[ "$type" == "disk" ]]; then
+            echo -e "disk : $clean_name $size"
 
-            echo -e "$name\t$size\t$type\t$mount" >> "$REPORT_DIR/disk.log"
+            echo -e "$CURRENT_TIME: disk : $clean_name $size" >> "$REPORT_DIR/disk.log"
+        
+        elif [[ "$type" != "crypt" ]]; then
+            echo -e "partition : $clean_name $size $mount"
+
+            echo -e "$CURRENT_TIME: partition : $clean_name $size $mount" >> "$REPORT_DIR/disk.log"
         fi
     done
 
@@ -121,11 +156,19 @@ function network
 
 function smartStatus 
 {
-    smart_info=$(smartctl -T permissive )
-    echo "SMART Info: $smart_info"
+   
+   
+    sudo smartctl --scan | awk '{print $1}' | while read -r dev; do
+    echo "===== SMART info for $dev ====="
+    sudo smartctl -T permissive -a "$dev"
+    done
 
-    CURRENT_TIME=$(date "+%Y-%m-%d-%Hh-%Mmin-%Ssec")
-    echo "$CURRENT_TIME: SMARTInfo=$smart_info" >> "$REPORT_DIR/smart.log"
+
+    #smart_info=$(smartctl -T permissive )
+   # echo "SMART Info: $smart_info"
+
+    #CURRENT_TIME=$(date "+%Y-%m-%d-%Hh-%Mmin-%Ssec")
+    #echo "$CURRENT_TIME: SMARTInfo=$smart_info" >> "$REPORT_DIR/smart.log"
 
     echo "===============================" >> "$REPORT_DIR/smart.log"
 
@@ -150,12 +193,12 @@ function linux
 
     while true; do
 
-        #disk
+        disk
         cpu 
         memory
-        gpu
-        network
-        smartStatus
+        #gpu
+        #network
+        #smartStatus
 
         sleep 4
     done
@@ -197,3 +240,4 @@ detect_os() {
     esac
 }
 detect_os
+
