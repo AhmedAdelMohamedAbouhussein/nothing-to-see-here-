@@ -9,10 +9,10 @@ REPORT_DIR="$LOG_DIR/$TIMESTAMP"
 mkdir -p "$REPORT_DIR"
 
     CRITICAL_MEMORY_THRESHOLD=50
-    CRITICAL_VIRTAUL_MEMORY_THRESHOLD=50  
-    CRITICAL_CPU_THRESHOLD=10
-    CRITICAL_CPU_TEMP_THRESHOLD=10
-    CRITICAL_GPU_USAGE_THRESHOLD=50  
+    CRITICAL_VIRTAUL_MEMORY_THRESHOLD=50
+    CRITICAL_CPU_THRESHOLD=70
+    CRITICAL_CPU_TEMP_THRESHOLD=50
+    CRITICAL_GPU_USAGE_THRESHOLD=50
     CRITICAL_GPU_TEMP_THRESHOLD=50
     CRITICAL_DISK_THRESHOLD=90  
 
@@ -106,9 +106,9 @@ function gpu
 
             echo "$CURRENT_TIME: GPU Usage: $GPU_Utilization% GPU Temperature: $GPU_Temperature°C" >> "$REPORT_DIR/gpu.log"
     
-    elif command -v intel_gpu_top &> /dev/null; then
-            sudo timeout 0.2s intel_gpu_top > /dev/tty
-            sudo timeout 0.2s intel_gpu_top -o /dev/stdout >> "$REPORT_DIR/gpu.log"
+    # elif command -v intel_gpu_top &> /dev/null; then
+    #         sudo timeout 0.2s intel_gpu_top > /dev/tty
+    #         sudo timeout 0.2s intel_gpu_top -o /dev/stdout >> "$REPORT_DIR/gpu.log"
     fi  
 
     # Clean numeric values for comparison
@@ -263,7 +263,7 @@ function linux
         disk
         cpu 
         memory
-        #gpu
+        gpu
         network
         #smartStatus
         loadmatrics

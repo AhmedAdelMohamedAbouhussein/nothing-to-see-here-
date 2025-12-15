@@ -8,6 +8,7 @@ import MemoryCircular from "../../charts/MemoryCircular";
 import MemoryLineChart from "../../charts/MemoryLineChart";
 import DiskHistogram from "../../charts/DiskHistogram"
 import NetworkChart from "../../charts/NetworkChart";
+import LoadAverageChart from "../../charts/LoadAverageChart"
 
 function Monitor() {
     const socketRef = useRef(null);
@@ -18,6 +19,7 @@ function Monitor() {
     const [virtualData, setVirtualData] = useState([]);
     const [diskSnapshots, setDiskSnapshots] = useState([]);
     const [networkData, setNetworkData] = useState([]);
+    const [uptimeData, setUptimeData] = useState([]);
 
     // Function to generate backend-style timestamp
     const getBackendStyleTime = () => {
@@ -215,6 +217,29 @@ function Monitor() {
                 });
             }
 
+            /* ================= UPTIME / LOAD ================= */
+            const uptimeMatch = line.match(
+                /^\s*(\d{2}:\d{2}:\d{2})\s+up\s+(.+?),\s+(\d+)\s+user[s]?,\s+load average:\s+([\d.]+),\s+([\d.]+),\s+([\d.]+)\s*$/
+            );
+
+
+
+            if (uptimeMatch) {
+                const [, uptime, users, loadOne, loadFive, loadFifteen] = uptimeMatch;
+                setUptimeData(prev => [
+                    ...prev,
+                    {
+                        time,
+                        uptime,
+                        users: Number(users),
+                        loadOne: parseFloat(loadOne),
+                        loadFive: parseFloat(loadFive),
+                        loadFifteen: parseFloat(loadFifteen),
+                    }
+                ]);
+                console.log(uptimeData)
+            }
+
 
         };
 
@@ -256,16 +281,17 @@ function Monitor() {
                 </div>
 
                 {/* ===== Charts ===== */}
-<div className={styles.output}>
-    <div className={styles.metrics}>
-        <CpuGpuChart cpuData={cpuData} gpuData={gpuData} />
-        <MemoryCircular ram={ramData} virtual={virtualData} />
-        <MemoryLineChart ram={ramData} virtual={virtualData} />
-        <NetworkChart data={networkData} />
-        <DiskBarChart diskSnapshots={diskSnapshots} />
-        <DiskHistogram diskSnapshots={diskSnapshots} />
-    </div>
-</div>
+                <div className={styles.output}>
+                    <div className={styles.metrics}>
+                        <CpuGpuChart cpuData={cpuData} gpuData={gpuData} />
+                        <MemoryCircular ram={ramData} virtual={virtualData} />
+                        <MemoryLineChart ram={ramData} virtual={virtualData} />
+                        <NetworkChart data={networkData} />
+                        <DiskBarChart diskSnapshots={diskSnapshots} />
+                        <DiskHistogram diskSnapshots={diskSnapshots} />
+                        <LoadAverageChart uptimeData={uptimeData} />
+                    </div>
+                </div>
 
             </div>
         </div>

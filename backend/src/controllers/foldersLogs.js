@@ -7,7 +7,8 @@ import {
     parseMemoryLog,
     parseDiskLog,
     parseNetworkLog,
-    smartstatusLog
+    smartstatusLog,
+    parseUptimeLog
 } from "../utils/parseLogs.js";
 
 const REPORTS_DIR = path.join(process.cwd(), "system_reports");
@@ -43,6 +44,7 @@ export const getFolderLogs = (req, res) => {
             disk: [],
             network: [],
             smart: []
+
         };
 
         for (const file of files) {
@@ -67,6 +69,9 @@ export const getFolderLogs = (req, res) => {
                     break;
                 case "smart.log":
                     response.smart = smartstatusLog(filePath);
+                    break;
+                case "load.log":
+                    response.uptimeData = parseUptimeLog(filePath)
                     break;
             }
         }

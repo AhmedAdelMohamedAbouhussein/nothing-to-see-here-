@@ -8,6 +8,7 @@ import DiskBarChart from "../../charts/DiskCircularBar";
 import MemoryLineChart from "../../charts/MemoryLineChart";
 import DiskChart from "../../charts/DiskChart"
 import NetworkChart from "../../charts/NetworkChart";
+import LoadAverageChart from "../../charts/LoadAverageChart.jsx"
 
 import styles from "./Reports.module.css";
 
@@ -57,7 +58,7 @@ function Reports() {
     const renderMetrics = () => {
         if (!folderData) return null;
 
-        const { cpu, gpu, memory, disk: disks, network} = folderData;
+        const { cpu, gpu, memory, disk: disks, network, uptimeData} = folderData;
 
         return (
             <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
@@ -67,6 +68,7 @@ function Reports() {
                 <NetworkChart data={network} />
                 <DiskBarChart diskSnapshots={disks} />
                 <DiskChart diskSnapshots={disks} />
+                <LoadAverageChart uptimeData={uptimeData} />
             </div>
         );
     };

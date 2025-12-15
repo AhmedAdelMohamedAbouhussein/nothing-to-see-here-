@@ -201,3 +201,45 @@ export const smartstatusLog = (filePath) => {
         status: status || null
     };
 };
+
+
+export const parseUptimeLog = (filePath) => {
+    const lines = fs
+        .readFileSync(filePath, "utf-8")
+        .split("\n")
+        .map((line) => line.trim())
+        .filter((line) => line && !line.startsWith("="));
+
+    const uptimeData = [];
+
+    const regex = /^(\d{4}-\d{2}-\d{2}-\d{2}h-\d{2}min-\d{2}sec):\s+\d{2}:\d{2}:\d{2}\s+up\s+(.+?),\s+(\d+)\s+user[s]?,\s+load average:\s*([\d.]+),\s*([\d.]+),\s*([\d.]+)\s*$/;
+
+    for (const line of lines) {
+        const match = line.match(regex);
+
+        if (!match) {
+            continue;
+        }
+
+        const [
+            ,
+            time,
+            uptime,
+            users,
+            loadOne,
+            loadFive,
+            loadFifteen,
+        ] = match;
+
+        uptimeData.push({
+            time,
+            uptime: uptime.replace(/\s+/g, " ").trim(),
+            users: Number(users),
+            loadOne: Number(loadOne),
+            loadFive: Number(loadFive),
+            loadFifteen: Number(loadFifteen),
+        });
+    }
+
+    return uptimeData;
+};
