@@ -124,19 +124,19 @@ function disk
             used=$(df -h "$mount" | awk 'NR==2 {print $3 " used"}')
             use_percent=$(df -h "$mount" | awk 'NR==2 {print $5}')
             
-            echo -e "partition : $clean_name $size $type $mount $used $use_percent"
+            echo -e "$CURRENT_TIME: partition: $clean_name $size $type $mount $used $use_percent"
 
-            echo -e "$CURRENT_TIME: partition : $clean_name $size $type $mount $used $use_percent" >> "$REPORT_DIR/disk.log"
+            echo -e "$CURRENT_TIME: partition: $clean_name $size $type $mount $used $use_percent" >> "$REPORT_DIR/disk.log"
 
         elif [[ "$type" == "disk" ]]; then
-            echo -e "disk : $clean_name $size"
+            echo -e "$CURRENT_TIME: disk: $clean_name $size"
 
-            echo -e "$CURRENT_TIME: disk : $clean_name $size" >> "$REPORT_DIR/disk.log"
+            echo -e "$CURRENT_TIME: disk: $clean_name $size" >> "$REPORT_DIR/disk.log"
         
         elif [[ "$type" != "crypt" ]]; then
-            echo -e "partition : $clean_name $size $mount"
+            echo -e "$CURRENT_TIME: partition : $clean_name $size $type"
 
-            echo -e "$CURRENT_TIME: partition : $clean_name $size $mount" >> "$REPORT_DIR/disk.log"
+            echo -e "$CURRENT_TIME: partition : $clean_name $size $type" >> "$REPORT_DIR/disk.log"
         fi
     done
 

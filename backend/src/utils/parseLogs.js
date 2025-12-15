@@ -100,9 +100,9 @@ export const parseDiskLog = (filePath) => {
             }
 
             // Disk line
-            const diskMatch = line.match(/disk : (\S+)\s+(\S+)/);
+            const diskMatch = line.match(/disk: (\S+)\s+(\S+)/);
             if (diskMatch) {
-                const [, name, size] = diskMatch;
+                const [name, size] = diskMatch;
                 currentDisk = { name, size, partitions: [] };
                 currentSnapshot.disks.push(currentDisk);
                 continue;
@@ -110,7 +110,7 @@ export const parseDiskLog = (filePath) => {
 
             // Partition line
             const partitionMatch = line.match(
-                /partition : (\S+)\s+(\S+)\s+(\S+)(?:\s+(\S+))?(?:\s+([\d.]+[KMGT]?) used)?(?:\s+(\d+%)?)?/
+                /partition: (\S+)\s+(\S+)\s+(\S+)(?:\s+(\S+))?(?:\s+([\d.]+[KMGT]?) used)?(?:\s+(\d+%)?)?/
             );
             if (partitionMatch && currentDisk) {
                 const [, name, size, type, mount, used, usePercent] = partitionMatch;

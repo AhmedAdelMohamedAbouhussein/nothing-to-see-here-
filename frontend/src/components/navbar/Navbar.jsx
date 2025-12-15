@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaMicrochip, FaHdd, FaNetworkWired, FaCaretLeft, FaCaretRight } from "react-icons/fa";
-import { MdMemory } from "react-icons/md";
+import { FaCaretLeft, FaCaretRight, FaDesktop, FaFileAlt } from "react-icons/fa";
 
 import styles from './Navbar.module.css';
 
@@ -32,28 +31,12 @@ function Navbar() {
                 <div className={styles.items}>
                     <ul className={styles.ulist}>
                         <li className={styles.listitems}>
-                            <FaMicrochip className={styles.icons} />
-                            <Link className={styles.links} to="/cpu">CPU</Link>
+                            < FaDesktop className={styles.icons} />
+                            <Link className={styles.links} to="/">Monitor</Link>
                         </li>
                         <li className={styles.listitems}>
-                            <MdMemory className={styles.icons} />
-                            <Link className={styles.links} to="/ram">RAM</Link>
-                        </li>
-                        <li className={styles.listitems}>
-                            <FaHdd className={styles.icons} />
-                            <Link className={styles.links} to="/disk">Disk</Link>
-                        </li>
-                        <li className={styles.listitems}>
-                            <FaMicrochip className={styles.icons} />
-                            <Link className={styles.links} to="/gpu">GPU</Link>
-                        </li>
-                        <li className={styles.listitems}>
-                            <FaNetworkWired className={styles.icons} />
-                            <Link className={styles.links} to="/network">Network</Link>
-                        </li>
-                        <li className={styles.listitems}>
-                            <FaNetworkWired className={styles.icons} />
-                            <Link className={styles.links} to="/smartstatus">Smart Status</Link>
+                            < FaFileAlt className={styles.icons} />
+                            <Link className={styles.links} to="/report">Reports</Link>
                         </li>
                     </ul>
                 </div>

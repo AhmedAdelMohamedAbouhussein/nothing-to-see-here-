@@ -3,14 +3,12 @@ import styles from "./Monitor.module.css";
 import Navbar from "../../components/navbar/Navbar";
 
 import CpuGpuChart from "../../charts/CpuGpuChart";
-import DiskBarChart from "../../charts/DiskBarChart";
+import DiskBarChart from "../../charts/DiskCircularBar";
 import MemoryCircular from "../../charts/MemoryCircular";
 import MemoryLineChart from "../../charts/MemoryLineChart";
 
 function Monitor() {
     const socketRef = useRef(null);
-
-    const [logs, setLogs] = useState([]);
 
     const [cpuData, setCpuData] = useState([]);
     const [gpuData, setGpuData] = useState([]);
@@ -36,15 +34,15 @@ function Monitor() {
         const socket = new WebSocket("ws://localhost:8000");
         socketRef.current = socket;
 
-        const diskState = { disks: [] };
+        let currentSnapshot = null;
 
         socket.onopen = () => {
             console.log("Connected to WebSocket");
         };
 
         socket.onmessage = (event) => {
-            const line = event.data.trim();
-            setLogs(prev => [...prev, line]);
+            let line = event.data.trim();
+            //console.log(line);
 
             const time = getBackendStyleTime();
 
@@ -52,7 +50,7 @@ function Monitor() {
             if (line.startsWith("CPU Usage:")) {
                 const usage = parseFloat(line.split(":")[1]);
                 setCpuData(prev => [
-                    ...prev.slice(-19),
+                    ...prev,
                     { time, usage, temperature: prev.at(-1)?.temperature ?? 0 }
                 ]);
             }
@@ -69,7 +67,7 @@ function Monitor() {
             if (line.startsWith("Memory Utilization:")) {
                 const usagePercent = parseFloat(line.split(":")[1]);
                 setRamData(prev => [
-                    ...prev.slice(-19),
+                    ...prev,
                     { time, usagePercent }
                 ]);
             }
@@ -94,7 +92,7 @@ function Monitor() {
             if (line.startsWith("Virtual Memory Utilization:")) {
                 const usagePercent = parseFloat(line.split(":")[1]);
                 setVirtualData(prev => [
-                    ...prev.slice(-19),
+                    ...prev,
                     { time, usagePercent }
                 ]);
             }
@@ -116,32 +114,47 @@ function Monitor() {
             }
 
             /* ================= DISKS ================= */
-            if (line.startsWith("disk :")) {
-                diskState.disks.push({
-                    name: line.split(":")[1].trim().split(" ")[0],
-                    partitions: []
-                });
+            // Extract timestamp if present and Check if line has timestamp
+            const timestampMatch = line.match(/^(\d{4}-\d{2}-\d{2}-\d{2}h-\d{2}min-\d{2}sec):\s*(.*)/);
+            let timestamp = null;
+            if (timestampMatch) {
+                timestamp = timestampMatch[1];
+                line = timestampMatch[2]; // remove timestamp from the line
             }
 
-            if (line.startsWith("partition :")) {
-                const parts = line.split(" ");
-                const name = parts[2];
-                const usedIndex = parts.findIndex(p => p === "used");
-                const used = usedIndex !== -1 ? parseFloat(parts[usedIndex - 1]) : 0;
-
-                diskState.disks.at(-1)?.partitions.push({ name, used });
-            }
-
-            /* snapshot separator (blank line or end marker) */
-            if (line === "") {
-                if (diskState.disks.length) {
-                    setDiskSnapshots(prev => [
-                        ...prev.slice(-9),
-                        { time, disks: structuredClone(diskState.disks) }
-                    ]);
-                    diskState.disks = [];
+            // Save previous snapshot if timestamp changed
+            if (timestamp && (!currentSnapshot || currentSnapshot.time !== timestamp)) {
+                if (currentSnapshot) {
+                    // Replace the state entirely with the current snapshot
+                    setDiskSnapshots([structuredClone(currentSnapshot)]);
+                    console.log('Saved snapshot:', structuredClone(currentSnapshot));
                 }
+                currentSnapshot = { time: timestamp, disks: [] };
             }
+
+            // Now line may literally start with "disk:" or "partition:"
+            if (line.startsWith("disk:")) {
+                const parts = line.split(" ");
+                const name = parts[1];
+                const size = parts[2];
+                currentSnapshot.disks.push({ name, size, partitions: [] });
+            }
+
+
+            if (line.startsWith("partition:")) {
+                const parts = line.split(" ");
+                const partition = {
+                    name: parts[1],
+                    size: parts[2],
+                    type: parts[3],
+                };
+                if (parts[4]) partition.mount = parts[4];
+                if (parts[5]) partition.used = parts[5];
+                if (parts[7]) partition.usePercent = parts[7];
+            
+                currentSnapshot.disks.at(-1)?.partitions.push(partition);
+            }
+
         };
 
         socket.onerror = (err) => console.error("WebSocket error", err);
@@ -187,12 +200,6 @@ function Monitor() {
                     <DiskBarChart diskSnapshots={diskSnapshots} />
                 </div>
 
-                {/* ===== Logs ===== */}
-                <div className={styles.body}>
-                    <pre className={styles.output}>
-                        {logs.join("\n")}
-                    </pre>
-                </div>
             </div>
         </div>
     );

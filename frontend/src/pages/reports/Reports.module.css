@@ -88,3 +88,43 @@
     padding: 20px;
     overflow-y: auto;
 }
+
+
+.listitems {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 10px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    background: transparent;
+}
+
+.listitems:hover {
+    background: linear-gradient(90deg, #695cfe, #7b5dfc);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.links {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.links:hover {
+    text-decoration: none;
+}
+
+.icons {
+    font-size: 20px;
+    color: #a78bfa;
+    min-width: 25px;
+    transition: color 0.3s ease;
+}
+
+.listitems:hover .icons {
+    color: #ffffff;
+}

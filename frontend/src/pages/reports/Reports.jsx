@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from 'react-router-dom';
 
 import CpuGpuChart from "../../charts/CpuGpuChart";
-import MemoryCircular from "../../charts/MemoryCircular";
-import DiskBarChart from "../../charts/DiskBarChart";
+import {FaArrowLeft} from "react-icons/fa";
+import DiskBarChart from "../../charts/DiskCircularBar";
 import MemoryLineChart from "../../charts/MemoryLineChart";
-
 import styles from "./Reports.module.css";
 
 function Reports() {
@@ -69,6 +69,10 @@ function Reports() {
     return (
         <div className={styles.main}>
             <div className={styles.sidebar}>
+                    <div className={styles.listitems}>
+                        < FaArrowLeft className={styles.icons} />
+                        <Link Link className={styles.links} to="/">Back to monitoring</Link>
+                    </div>
                 <div className={styles.asideTop}>
                     <h3>Folders</h3>
                 </div>
