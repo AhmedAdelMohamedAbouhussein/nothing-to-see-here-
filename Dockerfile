@@ -1,15 +1,10 @@
 FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install Node.js, npm, and required tools
-RUN apt-get update && apt-get install -y \
-    nodejs \
-    npm \
-    bc \
-    lm-sensors \
-    smartmontools \
-    intel-gpu-tools \
-    iproute2 \
+# Install Node.js 22 (latest) + required tools
+RUN apt-get update && apt-get install -y curl \
+    && curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
+    && apt-get install -y nodejs bc lm-sensors smartmontools intel-gpu-tools iproute2 \
     && rm -rf /var/lib/apt/lists/*
 
 # Backend
@@ -28,8 +23,6 @@ COPY frontend/ ./
 # Expose ports
 EXPOSE 8000 5173
 
-# Use concurrently (or a process manager) in root CMD
-WORKDIR /App
-
 # Start backend and frontend (development)
-CMD ["sh", "-c", "cd backend && npm run main & cd ../frontend && npm run dev"]
+WORKDIR /App
+CMD ["sh", "-c", "cd /App/backend && npm run main & cd /App/frontend && npm run dev"]

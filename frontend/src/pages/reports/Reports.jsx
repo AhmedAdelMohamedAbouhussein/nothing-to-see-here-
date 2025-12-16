@@ -43,7 +43,6 @@ function Reports() {
                 `http://localhost:8000/reports/folders/${folderName}`
             );
             setFolderData(res.data); // save the folder logs
-            console.log(folderData);
         } 
         catch 
         {

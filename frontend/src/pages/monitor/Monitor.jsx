@@ -40,7 +40,6 @@ function Monitor() {
         let currentSnapshot = null;
 
         socket.onopen = () => {
-            console.log("Connected to WebSocket");
         };
 
         socket.onmessage = (event) => {
@@ -237,7 +236,6 @@ function Monitor() {
                         loadFifteen: parseFloat(loadFifteen),
                     }
                 ]);
-                console.log(uptimeData)
             }
 
 
