@@ -54,15 +54,15 @@ function cpu
 
     assert_not_empty "$Cpu" "CPU use" || return
 
-    Cputemp=$(sensors | awk '/Package id 0/ {gsub(/[+°C]/,"",$4); print $4}')
+    Cputemp=$(sensors | awk '/Package id 0/ {gsub(/[+°C]/,"",$4); print $4 "°C"}')
 
     assert_not_empty "$Cputemp" "CPU temp" || return
 
     echo "CPU Usage: $Cpu%"
-    echo "CPU Temperature: $Cputemp°C"
 
     Cputemp_num=$(echo "$Cputemp" | sed 's/[^0-9.]//g')
 
+    echo "CPU Temperature: $Cputemp_num"
     # CPU Usage alert (decimal-safe using bc)
     if (( $(echo "$Cpu > $CRITICAL_CPU_THRESHOLD" | bc -l) )); then
         echo "ALERT: High CPU Usage ($Cpu%)" 
@@ -150,7 +150,7 @@ function gpu
 
         echo "GPU Usage: $GPU_Utilization%"
 
-        echo "GPU Temperature: $GPU_Temperature°C"
+        echo "GPU Temperature: $GPU_Temperature"
 
         echo "$CURRENT_TIME: GPU Usage: $GPU_Utilization% GPU Temperature: $GPU_Temperature°C" >> "$REPORT_DIR/gpu.log"
 
@@ -630,7 +630,4 @@ run_all_tests() {
 
 # Execute tests
 run_all_tests
-
-
-
 detect_os
